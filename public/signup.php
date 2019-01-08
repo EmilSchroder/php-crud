@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "config.php";
+require_once "private/db_config.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
@@ -91,7 +91,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
-?>
 ?>
 
 
